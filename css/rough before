@@ -1,0 +1,30 @@
+<div class="module">
+  
+</div>
+
+body {
+  padding: 20px;
+}
+
+.module {
+  width: 200px;
+  height: 200px;
+  background: #f06d06;
+  position: relative;
+  margin: 20px;
+  border-radius: 50%;
+}
+.module:hover{
+  border: 5px solid blue; 
+}
+.module:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: red;
+  z-index: -1;
+  border-radius: 50%;
+}
